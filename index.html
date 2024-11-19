@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SahFay Official</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Optional Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="bg-gradient">
+    <div class="header-content">
+      <img src="logo.png" alt="SahFay Official Logo" class="logo">
+      <h1>SahFay Official</h1>
+      <p class="search-instructions">
+        Use the search bar above to find files related to your business or projects. 
+        Simply type keywords Like Your Business Name example (Sahfay), and the system will display all matching results. 
+        If there are files with similar names, they will all appear for your review.
+      </p>
+
+
+      <!-- Search Bar inside header -->
+      <div class="search-wrapper">
+        <input type="text" id="searchBar" placeholder="Search files..." class="search-bar">
+        <button onclick="searchFiles()" class="search-button">Search</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- About Our Agency Section -->
+    <section class="about-section container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2>About Our Agency</h2>
+          <p>We are a full-service digital marketing agency focused on delivering innovative marketing solutions that help businesses grow online. From SEO to social media management, we provide a wide range of services to help you succeed in the digital world.</p>
+        </div>
+      </div>
+
+      <!-- Our Services Section -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Our Services</h3>
+            <ul>
+              <li>Search Engine Optimization (SEO)</li>
+              <li>Social Media Marketing</li>
+              <li>Pay-Per-Click (PPC) Advertising</li>
+              <li>Content Marketing</li>
+              <li>Branding & Strategy</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Follow Us</h3>
+            <ul class="social-media-list">
+              <li><a href="https://facebook.com/sahfayofficial" target="_blank">Facebook</a></li>
+              <li><a href="https://instagram.com/sahfayofficial" target="_blank">Instagram</a></li>
+              <li><a href="https://x.com/sahfayofficial" target="_blank">Twitter</a></li>
+              <li><a href="https://pinterest.com/sahfayofficial" target="_blank">Pinterest</a></li>
+              <li><a href="https://www.linkedin.com/in/munsur-helal/" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:sahfay.official">Send Email</a></p>
+            <p><a href="https://wa.link/w6rsyw" target="_blank">WhatsApp</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Results Modal -->
+    <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="resultsModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="resultsModalLabel">Search Results</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul id="results" class="results-list"></ul>
+            <p id="error-message" class="error-message"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 bg-light">
+    <p>© 2024 SahFay Official. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
